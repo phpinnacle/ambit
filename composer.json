@@ -1,0 +1,50 @@
+{
+    "name": "phpinnacle/ambit",
+    "type": "library",
+    "description": "PHPinnacle binary buffer implementation",
+    "keywords": [
+        "phpinnacle", "buffer", "byte buffer", "binary", "binary data", "pack", "unpack"
+    ],
+    "homepage": "https://github.com/phpinnacle/ambit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHPinnacle",
+            "email": "dev@phpinnacle.com",
+            "homepage": "https://phpinnacle.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpbench/phpbench": "^0.16",
+        "phpunit/phpunit": "^8.0"
+    },
+    "suggest": {
+        "ext-buffer": "C extension to speed up pack/unpack binary data"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPinnacle\\Ambit\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPinnacle\\Ambit\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "bench": "phpbench run benchmarks --report=aggregate"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
